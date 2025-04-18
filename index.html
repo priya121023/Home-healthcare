@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Home Healthcare Service</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <!-- Removed: <img src="images/logo.png" alt="Home Healthcare Logo"> -->
+                <span>Care & Comfort at Home</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="cta"><a href="#appointment">Book Appointment</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Compassionate Care, Right at Your Doorstep</h1>
+            <p>Providing professional and personalized home healthcare services to support your well-being.</p>
+            <a href="#services" class="button primary-button">Explore Our Services</a>
+        </div>
+        <!-- Removed hero image -->
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="container">
+            <h2>Our Comprehensive Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <!-- Removed image -->
+                    <h3>Nursing Care</h3>
+                    <p>Experienced nurses providing skilled medical care at home.</p>
+                    <a href="#" class="button secondary-button">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <!-- Removed image -->
+                    <h3>Personal Care</h3>
+                    <p>Assistance with daily activities, ensuring comfort and dignity.</p>
+                    <a href="#" class="button secondary-button">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <!-- Removed image -->
+                    <h3>Therapy Services</h3>
+                    <p>Physical, occupational, and speech therapy in the comfort of your home.</p>
+                    <a href="#" class="button secondary-button">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <!-- Removed image -->
+                    <h3>Medication Management</h3>
+                    <p>Ensuring timely and accurate medication administration.</p>
+                    <a href="#" class="button secondary-button">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <!-- Removed image -->
+                    <h3>Companionship Care</h3>
+                    <p>Providing emotional support and social interaction.</p>
+                    <a href="#" class="button secondary-button">Learn More</a>
+                </div>
+                <div class="service-card">
+                    <!-- Removed image -->
+                    <h3>Specialized Care</h3>
+                    <p>Care for specific conditions such as dementia and post-surgery recovery.</p>
+                    <a href="#" class="button secondary-button">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-content">
+                <h2>About Our Dedicated Team</h2>
+                <p>We are a team of passionate and qualified healthcare professionals committed to providing the highest quality of care in the comfort of your home. Our mission is to enhance the well-being and independence of our clients through personalized and compassionate services.</p>
+                <p>We believe in building strong relationships with our clients and their families, ensuring open communication and a collaborative approach to care. Our caregivers are carefully selected, thoroughly screened, and continuously trained to meet the diverse needs of our community.</p>
+                <a href="#" class="button primary-button">Read More About Us</a>
+            </div>
+            <!-- Removed about image -->
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have questions or want to learn more about our services? Contact us today!</p>
+            <div class="contact-form">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone:</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="button primary-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="appointment" class="appointment-section">
+        <div class="container">
+            <h2>Schedule an Appointment</h2>
+            <p>Ready to take the next step? Book a consultation with our care coordinator.</p>
+            <form class="appointment-form" action="#" method="POST">
+                <div class="form-group">
+                    <label for="patient-name">Patient Name:</label>
+                    <input type="text" id="patient-name" name="patient-name" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-date">Preferred Date:</label>
+                    <input type="date" id="preferred-date" name="preferred-date" required>
+                </div>
+                <div class="form-group">
+                    <label for="preferred-time">Preferred Time:</label>
+                    <input type="time" id="preferred-time" name="preferred-time">
+                </div>
+                <div class="form-group">
+                    <label for="service-needed">Service Needed:</label>
+                    <select id="service-needed" name="service-needed">
+                        <option value="nursing-care">Nursing Care</option>
+                        <option value="personal-care">Personal Care</option>
+                        <option value="therapy-services">Therapy Services</option>
+                        <option value="medication-management">Medication Management</option>
+                        <option value="companionship-care">Companionship Care</option>
+                        <option value="specialized-care">Specialized Care</option>
+                        <option value="consultation">General Consultation</option>
+                    </select>
+                </div>
+                <button type="submit" class="button primary-button">Request Appointment</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-info">
+                <p>&copy; 2025 Your Home Healthcare Service. All rights reserved.</p>
+                <ul class="footer-links">
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
